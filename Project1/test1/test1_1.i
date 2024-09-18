@@ -42439,7 +42439,7 @@ int main() {
     global_counter += 1;
 
 
-    cout << "Global counter: " << global_counter << endl;
+
 
 
     return 0;

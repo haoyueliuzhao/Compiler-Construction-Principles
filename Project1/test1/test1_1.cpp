@@ -3,7 +3,7 @@
 #include <string>     // 字符串处理
 using namespace std;
 #define PI 3.14159    // 宏定义
-#define DEBUG         // 条件编译
+//#define DEBUG         // 条件编译
 
 const int MAX_COUNT = 100; // 常量
 
