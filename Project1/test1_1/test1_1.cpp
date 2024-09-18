@@ -18,7 +18,7 @@ inline void printMessage(const string& msg) {
 double calculateArea(double radius) {
     return PI * radius * radius;
 }
-
+void helperFunction();  // 函数声明
 class Circle {
 public:
     Circle(double r) : radius(r) {}
@@ -41,6 +41,8 @@ int main() {
 
     Circle circle1(5.0);
     circle1.display();
+
+    helperFunction();  // 调用新函数
 
     // 使用全局变量
     global_counter += 1;
