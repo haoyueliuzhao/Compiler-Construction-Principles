@@ -50,8 +50,8 @@ _ZL9MAX_COUNT:
 	.size	global_counter, 4
 global_counter:
 	.zero	4
-	.text
-	.globl	_Z12printMessageRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+	.section	.text._Z12printMessageRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE,"axG",@progbits,_Z12printMessageRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE,comdat
+	.weak	_Z12printMessageRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
 	.type	_Z12printMessageRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE, @function
 _Z12printMessageRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE:
 .LFB2324:
@@ -80,6 +80,7 @@ _Z12printMessageRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE:
 	.cfi_endproc
 .LFE2324:
 	.size	_Z12printMessageRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE, .-_Z12printMessageRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+	.text
 	.globl	_Z13calculateAread
 	.type	_Z13calculateAread, @function
 _Z13calculateAread:
@@ -209,8 +210,6 @@ _ZNK6Circle7displayEv:
 	.section	.rodata
 .LC2:
 	.string	"Hello, World!"
-.LC4:
-	.string	"Global counter: "
 	.text
 	.globl	main
 	.type	main, @function
@@ -257,24 +256,10 @@ main:
 	leaq	-72(%rbp), %rax
 	movq	%rax, %rdi
 	call	_ZNK6Circle7displayEv
+.LEHE1:
 	movl	global_counter(%rip), %eax
 	addl	$1, %eax
 	movl	%eax, global_counter(%rip)
-	leaq	.LC4(%rip), %rax
-	movq	%rax, %rsi
-	leaq	_ZSt4cout(%rip), %rax
-	movq	%rax, %rdi
-	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
-	movq	%rax, %rdx
-	movl	global_counter(%rip), %eax
-	movl	%eax, %esi
-	movq	%rdx, %rdi
-	call	_ZNSolsEi@PLT
-	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
-	movq	%rdx, %rsi
-	movq	%rax, %rdi
-	call	_ZNSolsEPFRSoS_E@PLT
-.LEHE1:
 	movl	$0, %ebx
 	leaq	-64(%rbp), %rax
 	movq	%rax, %rdi
@@ -599,7 +584,7 @@ _ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_:
 	.size	_ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_, .-_ZSt8distanceIPKcENSt15iterator_traitsIT_E15difference_typeES3_S3_
 	.section	.rodata
 	.align 8
-.LC5:
+.LC4:
 	.string	"basic_string::_M_construct null not valid"
 	.section	.text._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag,"axG",@progbits,_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag,comdat
 	.align 2
@@ -640,7 +625,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_S
 .L41:
 	testb	%al, %al
 	je	.L42
-	leaq	.LC5(%rip), %rax
+	leaq	.LC4(%rip), %rax
 	movq	%rax, %rdi
 .LEHB6:
 	call	_ZSt19__throw_logic_errorPKc@PLT
