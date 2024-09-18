@@ -11,7 +11,7 @@ const int MAX_COUNT = 100; // 常量
 int global_counter = 0;
 
 // 函数定义
-void printMessage(const string& msg) {
+inline void printMessage(const string& msg) {
     cout << msg << endl;
 }
 

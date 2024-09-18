@@ -42404,7 +42404,7 @@ const int MAX_COUNT = 100;
 int global_counter = 0;
 
 
-void printMessage(const string& msg) {
+inline void printMessage(const string& msg) {
     cout << msg << endl;
 }
 
