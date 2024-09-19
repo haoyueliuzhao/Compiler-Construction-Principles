@@ -1,0 +1,853 @@
+
+;; Function std::ctype<char>::do_widen (_ZNKSt5ctypeIcE8do_widenEc, funcdef_no=1565, decl_uid=38056, cgraph_uid=536, symbol_order=565)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 9.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/f:DI 83 [ this ])
+        (reg:DI 5 di [ this ])) "/usr/include/c++/11/bits/locale_facets.h":1087:7 -1
+     (nil))
+(insn 3 2 4 2 (set (reg:SI 85)
+        (reg:SI 4 si [ __c ])) "/usr/include/c++/11/bits/locale_facets.h":1087:7 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:QI 84 [ __c ])
+        (subreg:QI (reg:SI 85) 0)) "/usr/include/c++/11/bits/locale_facets.h":1087:7 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 12 2 (set (reg:QI 82 [ <retval> ])
+        (reg/v:QI 84 [ __c ])) "/usr/include/c++/11/bits/locale_facets.h":1088:16 -1
+     (nil))
+(insn 12 8 13 2 (set (reg/i:QI 0 ax)
+        (reg:QI 82 [ <retval> ])) "/usr/include/c++/11/bits/locale_facets.h":1088:21 -1
+     (nil))
+(insn 13 12 0 2 (use (reg/i:QI 0 ax)) "/usr/include/c++/11/bits/locale_facets.h":1088:21 -1
+     (nil))
+
+;; Function calculateArea (_Z13calculateAread, funcdef_no=2406, decl_uid=53598, cgraph_uid=940, symbol_order=1455)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 10.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:DF 84 [ radius ])
+        (reg:DF 20 xmm0 [ radius ])) "test1_1.cpp":18:37 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:DF 87)
+        (mem/u/c:DF (symbol_ref/u:DI ("*.LC0") [flags 0x2]) [0  S8 A64])) "test1_1.cpp":19:15 -1
+     (expr_list:REG_EQUAL (const_double:DF 3.14158999999999988261834005243144929409027099609375e+0 [0x0.c90fcf80dc337p+2])
+        (nil)))
+(insn 7 6 8 2 (set (reg:DF 86)
+        (mult:DF (reg/v:DF 84 [ radius ])
+            (reg:DF 87))) "test1_1.cpp":19:15 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:DF 85)
+        (mult:DF (reg:DF 86)
+            (reg/v:DF 84 [ radius ]))) "test1_1.cpp":19:26 -1
+     (nil))
+(insn 9 8 13 2 (set (reg:DF 83 [ <retval> ])
+        (reg:DF 85)) "test1_1.cpp":19:26 -1
+     (nil))
+(insn 13 9 14 2 (set (reg/i:DF 20 xmm0)
+        (reg:DF 83 [ <retval> ])) "test1_1.cpp":20:1 -1
+     (nil))
+(insn 14 13 0 2 (use (reg/i:DF 20 xmm0)) "test1_1.cpp":20:1 -1
+     (nil))
+
+;; Function main (main, funcdef_no=2412, decl_uid=53649, cgraph_uid=946, symbol_order=1461) (executed once)
+
+Partition 0: size 32 align 16
+	message
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+;; Generating RTL for gimple basic block 6
+
+;; Generating RTL for gimple basic block 7
+
+;; Generating RTL for gimple basic block 8
+
+;; Generating RTL for gimple basic block 9
+
+;; Generating RTL for gimple basic block 10
+
+;; Generating RTL for gimple basic block 11
+
+;; Generating RTL for gimple basic block 12
+
+;; Generating RTL for gimple basic block 13
+
+;; Generating RTL for gimple basic block 14
+
+;; Generating RTL for gimple basic block 15
+
+;; Generating RTL for gimple basic block 16
+
+;; Generating RTL for gimple basic block 17
+
+;; Generating RTL for gimple basic block 18
+
+;; Generating RTL for gimple basic block 19
+
+;; Generating RTL for gimple basic block 20
+
+;; Generating RTL for gimple basic block 21
+
+;; Generating RTL for gimple basic block 22
+
+;; Generating RTL for gimple basic block 23
+
+;; Generating RTL for gimple basic block 24
+Edge 8->10 redirected to 28
+Edge 19->21 redirected to 30
+Predictions for insn 146 bb 26
+  first match heuristics: 99.96%  exec 1072883007 (estimated locally) hit 2145766006 (estimated locally) (200.0%)
+  combined heuristics: 99.96%  exec 1072883007 (estimated locally) hit 2145766006 (estimated locally) (200.0%)
+  noreturn call heuristics: 99.96%  exec 1072883007 (estimated locally) hit 2145766006 (estimated locally) (200.0%)
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 5 into block 4...
+Merged blocks 4 and 5.
+Merged 4 and 5 without moving.
+Merging block 13 into block 12...
+Merged blocks 12 and 13.
+Merged 12 and 13 without moving.
+Merging block 17 into block 16...
+Merged blocks 16 and 17.
+Merged 16 and 17 without moving.
+Merging block 21 into block 20...
+Merged blocks 20 and 21.
+Merged 20 and 21 without moving.
+Merging block 29 into block 28...
+Merged blocks 28 and 29.
+Merged 28 and 29 without moving.
+Merging block 33 into block 32...
+Merged blocks 32 and 33.
+Merged 32 and 33 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 7 3 2 NOTE_INSN_FUNCTION_BEG)
+(insn 3 2 4 2 (set (reg/f:DI 112)
+        (const_int 40 [0x28])) "test1_1.cpp":37:12 -1
+     (nil))
+(insn 4 3 9 2 (parallel [
+            (set (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                        (const_int -8 [0xfffffffffffffff8])) [12 D.61472+0 S8 A64])
+                (unspec:DI [
+                        (mem/v/f:DI (reg/f:DI 112) [4 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_SET))
+            (set (scratch:DI)
+                (const_int 0 [0]))
+            (clobber (reg:CC 17 flags))
+        ]) "test1_1.cpp":37:12 -1
+     (nil))
+(insn 9 4 10 2 (parallel [
+            (set (reg:DI 113)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/c++/11/bits/basic_string.h":165:25 -1
+     (nil))
+(insn 10 9 11 2 (parallel [
+            (set (reg:DI 114)
+                (plus:DI (reg:DI 113)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/c++/11/bits/basic_string.h":165:25 -1
+     (nil))
+(insn 11 10 12 2 (set (mem/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -48 [0xffffffffffffffd0])) [3 MEM[(struct _Alloc_hider *)&message]._M_p+0 S8 A128])
+        (reg:DI 114)) "/usr/include/c++/11/bits/basic_string.h":165:25 -1
+     (nil))
+(insn 12 11 13 2 (parallel [
+            (set (reg:DI 115)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/c++/11/bits/char_traits.h":437:49 -1
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg:DI 116)
+                (plus:DI (reg:DI 115)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/c++/11/bits/char_traits.h":437:49 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 117)
+        (const_int 6278066737626506568 [0x57202c6f6c6c6548])) "/usr/include/c++/11/bits/char_traits.h":437:49 -1
+     (nil))
+(insn 15 14 16 2 (set (mem/c:DI (reg:DI 116) [0 MEM <char[1:13]> [(void *)&message + 16B]+0 S8 A128])
+        (reg:DI 117)) "/usr/include/c++/11/bits/char_traits.h":437:49 -1
+     (nil))
+(insn 16 15 17 2 (set (mem/c:SI (plus:DI (reg:DI 116)
+                (const_int 8 [0x8])) [0 MEM <char[1:13]> [(void *)&message + 16B]+8 S4 A64])
+        (const_int 1684828783 [0x646c726f])) "/usr/include/c++/11/bits/char_traits.h":437:49 -1
+     (nil))
+(insn 17 16 18 2 (set (mem/c:QI (plus:DI (reg:DI 116)
+                (const_int 12 [0xc])) [0 MEM <char[1:13]> [(void *)&message + 16B]+12 S1 A32])
+        (const_int 33 [0x21])) "/usr/include/c++/11/bits/char_traits.h":437:49 -1
+     (nil))
+(insn 18 17 19 2 (set (mem/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -40 [0xffffffffffffffd8])) [4 message._M_string_length+0 S8 A64])
+        (const_int 13 [0xd])) "/usr/include/c++/11/bits/basic_string.h":191:26 -1
+     (nil))
+(insn 19 18 20 2 (set (mem/c:QI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                (const_int -19 [0xffffffffffffffed])) [0 MEM[(char_type &)&message + 29]+0 S1 A8])
+        (const_int 0 [0])) "/usr/include/c++/11/bits/char_traits.h":357:14 -1
+     (nil))
+(insn 20 19 21 2 (parallel [
+            (set (reg:DI 118)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/c++/11/bits/basic_string.h":6536:30 -1
+     (nil))
+(insn 21 20 22 2 (parallel [
+            (set (reg:DI 119)
+                (plus:DI (reg:DI 118)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/c++/11/bits/basic_string.h":6536:30 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:DI 1 dx)
+        (const_int 13 [0xd])) "/usr/include/c++/11/bits/basic_string.h":6536:30 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:DI 4 si)
+        (reg:DI 119)) "/usr/include/c++/11/bits/basic_string.h":6536:30 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:DI 120)
+        (symbol_ref:DI ("_ZSt4cout") [flags 0x40]  <var_decl 0x7f7ced3c2bd0 cout>)) "/usr/include/c++/11/bits/basic_string.h":6536:30 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:DI 5 di)
+        (reg:DI 120)) "/usr/include/c++/11/bits/basic_string.h":6536:30 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("_ZSt4cout") [flags 0x40]  <var_decl 0x7f7ced3c2bd0 cout>)
+        (nil)))
+(call_insn 26 25 163 2 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l") [flags 0x41]  <function_decl 0x7f7cee487a00 __ostream_insert>) [0 __ostream_insert S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/bits/basic_string.h":6536:30 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l") [flags 0x41]  <function_decl 0x7f7cee487a00 __ostream_insert>)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(note 163 26 27 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 27 163 29 4 (set (reg/f:DI 84 [ _23 ])
+        (reg:DI 0 ax)) "/usr/include/c++/11/bits/basic_string.h":6536:30 -1
+     (nil))
+(insn 29 27 30 4 (set (reg/f:DI 121)
+        (mem/f:DI (reg/f:DI 84 [ _23 ]) [2 _23->_vptr.basic_ostream+0 S8 A64])) "/usr/include/c++/11/ostream":685:39 -1
+     (nil))
+(insn 30 29 31 4 (set (reg:DI 122)
+        (mem:DI (plus:DI (reg/f:DI 121)
+                (const_int -24 [0xffffffffffffffe8])) [4 MEM[(long int *)_39 + -24B]+0 S8 A64])) -1
+     (nil))
+(insn 31 30 32 4 (set (reg/f:DI 91 [ _47 ])
+        (mem/f:DI (plus:DI (plus:DI (reg/f:DI 84 [ _23 ])
+                    (reg:DI 122))
+                (const_int 240 [0xf0])) [20 MEM[(const struct __ctype_type * *)_42 + 240B]+0 S8 A64])) -1
+     (nil))
+(insn 32 31 33 4 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 91 [ _47 ])
+            (const_int 0 [0]))) "/usr/include/c++/11/bits/basic_ios.h":49:7 -1
+     (nil))
+(jump_insn 33 32 34 4 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 37)
+            (pc))) "/usr/include/c++/11/bits/basic_ios.h":49:7 -1
+     (int_list:REG_BR_PROB 1073312332 (nil))
+ -> 37)
+(note 34 33 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(call_insn 35 34 36 6 (call (mem:QI (symbol_ref:DI ("_ZSt16__throw_bad_castv") [flags 0x41]  <function_decl 0x7f7cee8abc00 __throw_bad_cast>) [0 __throw_bad_cast S1 A8])
+        (const_int 0 [0])) "/usr/include/c++/11/bits/basic_ios.h":50:18 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZSt16__throw_bad_castv") [flags 0x41]  <function_decl 0x7f7cee8abc00 __throw_bad_cast>)
+            (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+                (expr_list:REG_NORETURN (const_int 0 [0])
+                    (nil)))))
+    (nil))
+(barrier 36 35 37)
+(code_label 37 36 38 7 5 (nil) [1 uses])
+(note 38 37 39 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 39 38 40 7 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem:QI (plus:DI (reg/f:DI 91 [ _47 ])
+                    (const_int 56 [0x38])) [0 MEM[(const struct ctype *)_47]._M_widen_ok+0 S1 A64])
+            (const_int 0 [0]))) "/usr/include/c++/11/bits/locale_facets.h":877:2 -1
+     (nil))
+(jump_insn 40 39 41 7 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) "/usr/include/c++/11/bits/locale_facets.h":877:2 -1
+     (int_list:REG_BR_PROB 524845004 (nil))
+ -> 45)
+(note 41 40 42 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 8 (set (reg:QI 93 [ _58 ])
+        (mem:QI (plus:DI (reg/f:DI 91 [ _47 ])
+                (const_int 67 [0x43])) [0 MEM[(const struct ctype *)_47]._M_widen[10]+0 S1 A8])) "/usr/include/c++/11/bits/locale_facets.h":878:51 -1
+     (nil))
+(jump_insn 43 42 44 8 (set (pc)
+        (label_ref 60)) "/usr/include/c++/11/bits/locale_facets.h":878:51 -1
+     (nil)
+ -> 60)
+(barrier 44 43 45)
+(code_label 45 44 46 9 6 (nil) [1 uses])
+(note 46 45 47 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 47 46 48 9 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ _47 ])) "/usr/include/c++/11/bits/locale_facets.h":879:21 -1
+     (nil))
+(call_insn 48 47 49 9 (call (mem:QI (symbol_ref:DI ("_ZNKSt5ctypeIcE13_M_widen_initEv") [flags 0x41]  <function_decl 0x7f7ced7ea000 _M_widen_init>) [0 _M_widen_init S1 A8])
+        (const_int 0 [0])) "/usr/include/c++/11/bits/locale_facets.h":879:21 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNKSt5ctypeIcE13_M_widen_initEv") [flags 0x41]  <function_decl 0x7f7ced7ea000 _M_widen_init>)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(note 49 48 50 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 50 49 51 10 (set (reg/f:DI 123)
+        (mem/f:DI (reg/f:DI 91 [ _47 ]) [2 MEM[(const struct ctype *)_47].D.38122._vptr.facet+0 S8 A64])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(insn 51 50 52 10 (set (reg/f:DI 95 [ _61 ])
+        (mem/f:DI (plus:DI (reg/f:DI 123)
+                (const_int 48 [0x30])) [24 MEM[(int (*) () *)_60 + 48B]+0 S8 A64])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(insn 52 51 53 10 (set (reg:DI 124)
+        (symbol_ref/i:DI ("_ZNKSt5ctypeIcE8do_widenEc") [flags 0x3]  <function_decl 0x7f7ced7e2b00 do_widen>)) -1
+     (nil))
+(insn 53 52 54 10 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 95 [ _61 ])
+            (reg:DI 124))) -1
+     (nil))
+(jump_insn 54 53 55 10 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 157)
+            (pc))) 806 {*jcc}
+     (int_list:REG_BR_PROB 858993460 (nil))
+ -> 157)
+(note 55 54 56 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 56 55 57 11 (set (reg:SI 4 si)
+        (const_int 10 [0xa])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(insn 57 56 58 11 (set (reg:DI 5 di)
+        (reg/f:DI 91 [ _47 ])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(call_insn 58 57 164 11 (set (reg:QI 0 ax)
+        (call (mem:QI (reg/f:DI 95 [ _61 ]) [0 *OBJ_TYPE_REF(_61;_47->6) S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (nil)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(note 164 58 59 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 59 164 154 12 (set (reg:QI 93 [ _58 ])
+        (reg:QI 0 ax)) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(jump_insn 154 59 155 12 (set (pc)
+        (label_ref 60)) "/usr/include/c++/11/bits/locale_facets.h":880:27 -1
+     (nil)
+ -> 60)
+(barrier 155 154 157)
+(code_label 157 155 156 14 13 (nil) [1 uses])
+(note 156 157 5 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 5 156 60 14 (set (reg:QI 93 [ _58 ])
+        (const_int 10 [0xa])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(code_label 60 5 61 15 7 (nil) [2 uses])
+(note 61 60 62 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 62 61 63 15 (set (reg:SI 125)
+        (sign_extend:SI (reg:QI 93 [ _58 ]))) "/usr/include/c++/11/ostream":685:19 -1
+     (nil))
+(insn 63 62 64 15 (set (reg:SI 4 si)
+        (reg:SI 125)) "/usr/include/c++/11/ostream":685:19 -1
+     (nil))
+(insn 64 63 65 15 (set (reg:DI 5 di)
+        (reg/f:DI 84 [ _23 ])) "/usr/include/c++/11/ostream":685:19 -1
+     (nil))
+(call_insn 65 64 165 15 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_ZNSo3putEc") [flags 0x41]  <function_decl 0x7f7ced65f900 put>) [0 put S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/ostream":685:19 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNSo3putEc") [flags 0x41]  <function_decl 0x7f7ced65f900 put>)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(note 165 65 66 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 66 165 68 16 (set (reg/f:DI 90 [ _45 ])
+        (reg:DI 0 ax)) "/usr/include/c++/11/ostream":685:19 -1
+     (nil))
+(insn 68 66 69 16 (set (reg:DI 5 di)
+        (reg/f:DI 90 [ _45 ])) "/usr/include/c++/11/ostream":707:24 -1
+     (nil))
+(call_insn 69 68 70 16 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_ZNSo5flushEv") [flags 0x41]  <function_decl 0x7f7ced65fc00 flush>) [0 flush S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/ostream":707:24 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNSo5flushEv") [flags 0x41]  <function_decl 0x7f7ced65fc00 flush>)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(note 70 69 71 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 71 70 72 18 (set (reg:DI 1 dx)
+        (const_int 13 [0xd])) "/usr/include/c++/11/ostream":616:18 -1
+     (nil))
+(insn 72 71 73 18 (set (reg:DI 126)
+        (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f7cec7011b0 *.LC1>)) "/usr/include/c++/11/ostream":616:18 -1
+     (nil))
+(insn 73 72 74 18 (set (reg:DI 4 si)
+        (reg:DI 126)) "/usr/include/c++/11/ostream":616:18 -1
+     (expr_list:REG_EQUAL (symbol_ref/f:DI ("*.LC1") [flags 0x2]  <var_decl 0x7f7cec7011b0 *.LC1>)
+        (nil)))
+(insn 74 73 75 18 (set (reg:DI 127)
+        (symbol_ref:DI ("_ZSt4cout") [flags 0x40]  <var_decl 0x7f7ced3c2bd0 cout>)) "/usr/include/c++/11/ostream":616:18 -1
+     (nil))
+(insn 75 74 76 18 (set (reg:DI 5 di)
+        (reg:DI 127)) "/usr/include/c++/11/ostream":616:18 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("_ZSt4cout") [flags 0x40]  <var_decl 0x7f7ced3c2bd0 cout>)
+        (nil)))
+(call_insn 76 75 77 18 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l") [flags 0x41]  <function_decl 0x7f7cee487a00 __ostream_insert>) [0 __ostream_insert S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/ostream":616:18 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_l") [flags 0x41]  <function_decl 0x7f7cee487a00 __ostream_insert>)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(note 77 76 78 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 78 77 79 19 (set (reg:DF 128)
+        (mem/u/c:DF (symbol_ref/u:DI ("*.LC2") [flags 0x2]) [0  S8 A64])) "/usr/include/c++/11/ostream":221:25 -1
+     (expr_list:REG_EQUAL (const_double:DF 7.8539749999999997953636921010911464691162109375e+1 [0x0.9d145a1cac083p+7])
+        (nil)))
+(insn 79 78 80 19 (set (reg:DF 20 xmm0)
+        (reg:DF 128)) "/usr/include/c++/11/ostream":221:25 -1
+     (nil))
+(insn 80 79 81 19 (set (reg:DI 129)
+        (symbol_ref:DI ("_ZSt4cout") [flags 0x40]  <var_decl 0x7f7ced3c2bd0 cout>)) "/usr/include/c++/11/ostream":221:25 -1
+     (nil))
+(insn 81 80 82 19 (set (reg:DI 5 di)
+        (reg:DI 129)) "/usr/include/c++/11/ostream":221:25 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("_ZSt4cout") [flags 0x40]  <var_decl 0x7f7ced3c2bd0 cout>)
+        (nil)))
+(call_insn 82 81 166 19 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_ZNSo9_M_insertIdEERSoT_") [flags 0x41]  <function_decl 0x7f7ced27b400 _M_insert>) [0 _M_insert S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/ostream":221:25 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNSo9_M_insertIdEERSoT_") [flags 0x41]  <function_decl 0x7f7ced27b400 _M_insert>)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DF (use (reg:DF 20 xmm0))
+            (nil))))
+(note 166 82 83 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 83 166 85 20 (set (reg/f:DI 97 [ _74 ])
+        (reg:DI 0 ax)) "/usr/include/c++/11/ostream":221:25 -1
+     (nil))
+(insn 85 83 86 20 (set (reg/f:DI 130)
+        (mem/f:DI (reg/f:DI 97 [ _74 ]) [2 MEM[(struct basic_ostream *)_74]._vptr.basic_ostream+0 S8 A64])) "/usr/include/c++/11/ostream":685:39 -1
+     (nil))
+(insn 86 85 87 20 (set (reg:DI 131)
+        (mem:DI (plus:DI (reg/f:DI 130)
+                (const_int -24 [0xffffffffffffffe8])) [4 MEM[(long int *)_77 + -24B]+0 S8 A64])) -1
+     (nil))
+(insn 87 86 88 20 (set (reg/f:DI 104 [ _85 ])
+        (mem/f:DI (plus:DI (plus:DI (reg/f:DI 97 [ _74 ])
+                    (reg:DI 131))
+                (const_int 240 [0xf0])) [20 MEM[(const struct __ctype_type * *)_80 + 240B]+0 S8 A64])) -1
+     (nil))
+(insn 88 87 89 20 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 104 [ _85 ])
+            (const_int 0 [0]))) "/usr/include/c++/11/bits/basic_ios.h":49:7 -1
+     (nil))
+(jump_insn 89 88 90 20 (set (pc)
+        (if_then_else (ne (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 93)
+            (pc))) "/usr/include/c++/11/bits/basic_ios.h":49:7 -1
+     (int_list:REG_BR_PROB 1073312332 (nil))
+ -> 93)
+(note 90 89 91 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(call_insn 91 90 92 22 (call (mem:QI (symbol_ref:DI ("_ZSt16__throw_bad_castv") [flags 0x41]  <function_decl 0x7f7cee8abc00 __throw_bad_cast>) [0 __throw_bad_cast S1 A8])
+        (const_int 0 [0])) "/usr/include/c++/11/bits/basic_ios.h":50:18 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZSt16__throw_bad_castv") [flags 0x41]  <function_decl 0x7f7cee8abc00 __throw_bad_cast>)
+            (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+                (expr_list:REG_NORETURN (const_int 0 [0])
+                    (nil)))))
+    (nil))
+(barrier 92 91 93)
+(code_label 93 92 94 23 8 (nil) [1 uses])
+(note 94 93 95 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 95 94 96 23 (set (reg:CCZ 17 flags)
+        (compare:CCZ (mem:QI (plus:DI (reg/f:DI 104 [ _85 ])
+                    (const_int 56 [0x38])) [0 MEM[(const struct ctype *)_85]._M_widen_ok+0 S1 A64])
+            (const_int 0 [0]))) "/usr/include/c++/11/bits/locale_facets.h":877:2 -1
+     (nil))
+(jump_insn 96 95 97 23 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 101)
+            (pc))) "/usr/include/c++/11/bits/locale_facets.h":877:2 -1
+     (int_list:REG_BR_PROB 524845004 (nil))
+ -> 101)
+(note 97 96 98 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 98 97 99 24 (set (reg:QI 106 [ _96 ])
+        (mem:QI (plus:DI (reg/f:DI 104 [ _85 ])
+                (const_int 67 [0x43])) [0 MEM[(const struct ctype *)_85]._M_widen[10]+0 S1 A8])) "/usr/include/c++/11/bits/locale_facets.h":878:51 -1
+     (nil))
+(jump_insn 99 98 100 24 (set (pc)
+        (label_ref 116)) "/usr/include/c++/11/bits/locale_facets.h":878:51 -1
+     (nil)
+ -> 116)
+(barrier 100 99 101)
+(code_label 101 100 102 25 9 (nil) [1 uses])
+(note 102 101 103 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 103 102 104 25 (set (reg:DI 5 di)
+        (reg/f:DI 104 [ _85 ])) "/usr/include/c++/11/bits/locale_facets.h":879:21 -1
+     (nil))
+(call_insn 104 103 105 25 (call (mem:QI (symbol_ref:DI ("_ZNKSt5ctypeIcE13_M_widen_initEv") [flags 0x41]  <function_decl 0x7f7ced7ea000 _M_widen_init>) [0 _M_widen_init S1 A8])
+        (const_int 0 [0])) "/usr/include/c++/11/bits/locale_facets.h":879:21 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNKSt5ctypeIcE13_M_widen_initEv") [flags 0x41]  <function_decl 0x7f7ced7ea000 _M_widen_init>)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(note 105 104 106 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 106 105 107 26 (set (reg/f:DI 132)
+        (mem/f:DI (reg/f:DI 104 [ _85 ]) [2 MEM[(const struct ctype *)_85].D.38122._vptr.facet+0 S8 A64])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(insn 107 106 108 26 (set (reg/f:DI 108 [ _99 ])
+        (mem/f:DI (plus:DI (reg/f:DI 132)
+                (const_int 48 [0x30])) [24 MEM[(int (*) () *)_98 + 48B]+0 S8 A64])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(insn 108 107 109 26 (set (reg:DI 133)
+        (symbol_ref/i:DI ("_ZNKSt5ctypeIcE8do_widenEc") [flags 0x3]  <function_decl 0x7f7ced7e2b00 do_widen>)) -1
+     (nil))
+(insn 109 108 110 26 (set (reg:CCZ 17 flags)
+        (compare:CCZ (reg/f:DI 108 [ _99 ])
+            (reg:DI 133))) -1
+     (nil))
+(jump_insn 110 109 111 26 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref:DI 162)
+            (pc))) 806 {*jcc}
+     (int_list:REG_BR_PROB 858993460 (nil))
+ -> 162)
+(note 111 110 112 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 112 111 113 27 (set (reg:SI 4 si)
+        (const_int 10 [0xa])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(insn 113 112 114 27 (set (reg:DI 5 di)
+        (reg/f:DI 104 [ _85 ])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(call_insn 114 113 167 27 (set (reg:QI 0 ax)
+        (call (mem:QI (reg/f:DI 108 [ _99 ]) [0 *OBJ_TYPE_REF(_99;_85->6) S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (nil)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(note 167 114 115 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 115 167 159 28 (set (reg:QI 106 [ _96 ])
+        (reg:QI 0 ax)) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(jump_insn 159 115 160 28 (set (pc)
+        (label_ref 116)) "/usr/include/c++/11/bits/locale_facets.h":880:27 -1
+     (nil)
+ -> 116)
+(barrier 160 159 162)
+(code_label 162 160 161 30 14 (nil) [1 uses])
+(note 161 162 6 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 6 161 116 30 (set (reg:QI 106 [ _96 ])
+        (const_int 10 [0xa])) "/usr/include/c++/11/bits/locale_facets.h":880:23 -1
+     (nil))
+(code_label 116 6 117 31 10 (nil) [2 uses])
+(note 117 116 118 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 118 117 119 31 (set (reg:SI 134)
+        (sign_extend:SI (reg:QI 106 [ _96 ]))) "/usr/include/c++/11/ostream":685:19 -1
+     (nil))
+(insn 119 118 120 31 (set (reg:SI 4 si)
+        (reg:SI 134)) "/usr/include/c++/11/ostream":685:19 -1
+     (nil))
+(insn 120 119 121 31 (set (reg:DI 5 di)
+        (reg/f:DI 97 [ _74 ])) "/usr/include/c++/11/ostream":685:19 -1
+     (nil))
+(call_insn 121 120 168 31 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_ZNSo3putEc") [flags 0x41]  <function_decl 0x7f7ced65f900 put>) [0 put S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/ostream":685:19 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNSo3putEc") [flags 0x41]  <function_decl 0x7f7ced65f900 put>)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:SI (use (reg:SI 4 si))
+            (nil))))
+(note 168 121 122 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 122 168 124 32 (set (reg/f:DI 103 [ _83 ])
+        (reg:DI 0 ax)) "/usr/include/c++/11/ostream":685:19 -1
+     (nil))
+(insn 124 122 125 32 (set (reg:DI 5 di)
+        (reg/f:DI 103 [ _83 ])) "/usr/include/c++/11/ostream":707:24 -1
+     (nil))
+(call_insn 125 124 126 32 (set (reg:DI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("_ZNSo5flushEv") [flags 0x41]  <function_decl 0x7f7ced65fc00 flush>) [0 flush S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/ostream":707:24 -1
+     (expr_list:REG_EH_REGION (const_int 4 [0x4])
+        (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNSo5flushEv") [flags 0x41]  <function_decl 0x7f7ced65fc00 flush>)
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(note 126 125 127 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 127 126 128 34 (parallel [
+            (set (mem/c:SI (symbol_ref:DI ("global_counter") [flags 0x2]  <var_decl 0x7f7cecf5ca20 global_counter>) [13 global_counter+0 S4 A32])
+                (plus:SI (mem/c:SI (symbol_ref:DI ("global_counter") [flags 0x2]  <var_decl 0x7f7cecf5ca20 global_counter>) [13 global_counter+0 S4 A32])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 17 flags))
+        ]) "test1_1.cpp":46:20 -1
+     (nil))
+(insn 128 127 129 34 (parallel [
+            (set (reg:DI 135)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/c++/11/bits/basic_string.h":672:19 -1
+     (nil))
+(insn 129 128 130 34 (set (reg:DI 5 di)
+        (reg:DI 135)) "/usr/include/c++/11/bits/basic_string.h":672:19 -1
+     (nil))
+(call_insn 130 129 131 34 (call (mem:QI (symbol_ref:DI ("_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv") [flags 0x41]  <function_decl 0x7f7ceddfaa00 _M_dispose>) [0 _M_dispose S1 A8])
+        (const_int 0 [0])) "/usr/include/c++/11/bits/basic_string.h":672:19 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv") [flags 0x41]  <function_decl 0x7f7ceddfaa00 _M_dispose>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 131 130 132 34 (set (reg:SI 111 [ <retval> ])
+        (const_int 0 [0])) "test1_1.cpp":53:1 -1
+     (nil))
+(jump_insn 132 131 133 34 (set (pc)
+        (label_ref 143)) "test1_1.cpp":53:1 -1
+     (nil)
+ -> 143)
+(barrier 133 132 171)
+(code_label/s 171 133 173 35 15 (nil) [1 uses])
+(note 173 171 172 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 172 173 134 35 (set (reg:DI 138)
+        (reg:DI 0 ax)) "/usr/include/c++/11/bits/basic_string.h":672:19 -1
+     (nil))
+(code_label 134 172 135 36 11 (nil) [0 uses])
+(note 135 134 136 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 136 135 137 36 (parallel [
+            (set (reg:DI 137)
+                (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                    (const_int -48 [0xffffffffffffffd0])))
+            (clobber (reg:CC 17 flags))
+        ]) "/usr/include/c++/11/bits/basic_string.h":672:19 -1
+     (nil))
+(insn 137 136 138 36 (set (reg:DI 5 di)
+        (reg:DI 137)) "/usr/include/c++/11/bits/basic_string.h":672:19 -1
+     (nil))
+(call_insn 138 137 139 36 (call (mem:QI (symbol_ref:DI ("_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv") [flags 0x41]  <function_decl 0x7f7ceddfaa00 _M_dispose>) [0 _M_dispose S1 A8])
+        (const_int 0 [0])) "/usr/include/c++/11/bits/basic_string.h":672:19 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv") [flags 0x41]  <function_decl 0x7f7ceddfaa00 _M_dispose>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 139 138 140 36 (set (reg/f:DI 109 [ D.61471 ])
+        (reg:DI 138)) -1
+     (nil))
+(insn 140 139 141 36 (set (reg:DI 5 di)
+        (reg/f:DI 109 [ D.61471 ])) -1
+     (nil))
+(call_insn 141 140 142 36 (call (mem:QI (symbol_ref:DI ("_Unwind_Resume") [flags 0x41]  <function_decl 0x7f7cef687700 __builtin_unwind_resume>) [0 __builtin_unwind_resume S1 A8])
+        (const_int 0 [0])) -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_Unwind_Resume") [flags 0x41]  <function_decl 0x7f7cef687700 __builtin_unwind_resume>)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (expr_list:REG_NORETURN (const_int 0 [0])
+                (nil))))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(barrier 142 141 143)
+(code_label 143 142 152 37 4 (nil) [1 uses])
+(note 152 143 144 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 144 152 145 37 (set (reg/f:DI 139)
+        (const_int 40 [0x28])) "test1_1.cpp":53:1 -1
+     (nil))
+(insn 145 144 146 37 (parallel [
+            (set (reg:CCZ 17 flags)
+                (unspec:CCZ [
+                        (mem/v/f/c:DI (plus:DI (reg/f:DI 77 virtual-stack-vars)
+                                (const_int -8 [0xfffffffffffffff8])) [12 D.61472+0 S8 A64])
+                        (mem/v/f:DI (reg/f:DI 139) [4 MEM[(<address-space-1> long unsigned int *)40B]+0 S8 A64 AS1])
+                    ] UNSPEC_SP_TEST))
+            (clobber (scratch:DI))
+        ]) "test1_1.cpp":53:1 -1
+     (nil))
+(jump_insn 146 145 169 37 (set (pc)
+        (if_then_else (eq (reg:CCZ 17 flags)
+                (const_int 0 [0]))
+            (label_ref 149)
+            (pc))) "test1_1.cpp":53:1 -1
+     (int_list:REG_BR_PROB 1073312332 (nil))
+ -> 149)
+(note 169 146 147 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(call_insn 147 169 148 38 (call (mem:QI (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f7cec6bca00 __stack_chk_fail>) [0 __stack_chk_fail S1 A8])
+        (const_int 0 [0])) "test1_1.cpp":53:1 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("__stack_chk_fail") [flags 0x41]  <function_decl 0x7f7cec6bca00 __stack_chk_fail>)
+        (expr_list:REG_ARGS_SIZE (const_int 0 [0])
+            (expr_list:REG_NORETURN (const_int 0 [0])
+                (expr_list:REG_EH_REGION (const_int 0 [0])
+                    (nil)))))
+    (nil))
+(barrier 148 147 149)
+(code_label 149 148 170 39 12 (nil) [1 uses])
+(note 170 149 150 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 150 170 151 39 (set (reg/i:SI 0 ax)
+        (reg:SI 111 [ <retval> ])) "test1_1.cpp":53:1 -1
+     (nil))
+(insn 151 150 0 39 (use (reg/i:SI 0 ax)) "test1_1.cpp":53:1 -1
+     (nil))
+
+;; Function _GLOBAL__sub_I_global_counter (_GLOBAL__sub_I_global_counter, funcdef_no=3058, decl_uid=60908, cgraph_uid=1592, symbol_order=2262) (executed once)
+
+
+;; Generating RTL for gimple basic block 2
+deleting block 4
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg:DI 82)
+        (symbol_ref:DI ("_ZStL8__ioinit") [flags 0x2]  <var_decl 0x7f7ced3c2510 __ioinit>)) "/usr/include/c++/11/iostream":74:25 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:DI 5 di)
+        (reg:DI 82)) "/usr/include/c++/11/iostream":74:25 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("_ZStL8__ioinit") [flags 0x2]  <var_decl 0x7f7ced3c2510 __ioinit>)
+        (nil)))
+(call_insn 7 6 8 2 (call (mem:QI (symbol_ref:DI ("_ZNSt8ios_base4InitC1Ev") [flags 0x41]  <function_decl 0x7f7ced69bd00 __ct_comp >) [0 __ct_comp  S1 A8])
+        (const_int 0 [0])) "/usr/include/c++/11/iostream":74:25 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("_ZNSt8ios_base4InitC1Ev") [flags 0x41]  <function_decl 0x7f7ced69bd00 __ct_comp >)
+        (nil))
+    (expr_list:DI (use (reg:DI 5 di))
+        (nil)))
+(insn 8 7 9 2 (set (reg:DI 83)
+        (symbol_ref:DI ("__dso_handle") [flags 0x42]  <var_decl 0x7f7cec962480 __dso_handle>)) "/usr/include/c++/11/iostream":74:25 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:DI 1 dx)
+        (reg:DI 83)) "/usr/include/c++/11/iostream":74:25 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("__dso_handle") [flags 0x42]  <var_decl 0x7f7cec962480 __dso_handle>)
+        (nil)))
+(insn 10 9 11 2 (set (reg:DI 84)
+        (symbol_ref:DI ("_ZStL8__ioinit") [flags 0x2]  <var_decl 0x7f7ced3c2510 __ioinit>)) "/usr/include/c++/11/iostream":74:25 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:DI 4 si)
+        (reg:DI 84)) "/usr/include/c++/11/iostream":74:25 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("_ZStL8__ioinit") [flags 0x2]  <var_decl 0x7f7ced3c2510 __ioinit>)
+        (nil)))
+(insn 12 11 13 2 (set (reg:DI 86)
+        (mem/u/c:DI (const:DI (unspec:DI [
+                        (symbol_ref:DI ("_ZNSt8ios_base4InitD1Ev") [flags 0x41]  <function_decl 0x7f7ced69bf00 __dt_comp >)
+                    ] UNSPEC_GOTPCREL)) [35  S8 A8])) "/usr/include/c++/11/iostream":74:25 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:DI 85)
+        (reg:DI 86)) "/usr/include/c++/11/iostream":74:25 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:DI 5 di)
+        (reg:DI 85)) "/usr/include/c++/11/iostream":74:25 -1
+     (expr_list:REG_EQUAL (symbol_ref:DI ("_ZNSt8ios_base4InitD1Ev") [flags 0x41]  <function_decl 0x7f7ced69bf00 __dt_comp >)
+        (nil)))
+(call_insn/j 15 14 16 2 (set (reg:SI 0 ax)
+        (call (mem:QI (symbol_ref:DI ("__cxa_atexit") [flags 0x41]  <function_decl 0x7f7cec965c00 __cxa_atexit>) [0 __cxa_atexit S1 A8])
+            (const_int 0 [0]))) "/usr/include/c++/11/iostream":74:25 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:DI ("__cxa_atexit") [flags 0x41]  <function_decl 0x7f7cec965c00 __cxa_atexit>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list:DI (use (reg:DI 5 di))
+        (expr_list:DI (use (reg:DI 4 si))
+            (expr_list:DI (use (reg:DI 1 dx))
+                (nil)))))
+(barrier 16 15 0)
