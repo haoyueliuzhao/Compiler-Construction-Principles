@@ -1,11 +1,14 @@
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-pc-linux-gnu"
+
 ; 声明 SysY 库中的输入输出函数
 declare i32 @getint()                ; 声明获取整数输入的函数
 declare void @putint(i32)            ; 声明输出整数的函数
 declare void @putch(i32)             ; 声明输出单个字符的函数
 
 @p = constant float 3.0              ; 声明常量 p 的值为 3.0
+@a = global i32 12, align 4          ; 声明全局变量 a 的值为 12
+@b = global i32 11, align 4          ; 声明全局变量 b 的值为 11 
 @array1 = global [4 x i32] [i32 1, i32 2, i32 3, i32 4] ; 声明并初始化全局数组 array1
 
 ; 定义函数 f，接受一个整数参数 t，返回一个整数
@@ -48,18 +51,15 @@ loop_end:                            ; 循环结束标签
 define i32 @main() {
 entry:
     %x = alloca i32, align 4           ; 分配内存用于存储输入 x
-    %a = alloca i32, align 4           ; 分配内存用于存储变量 a
-    %b = alloca i32, align 4           ; 分配内存用于存储变量 b
-    store i32 12, i32* %a, align 4     ; 初始化 a 为 12
-    store i32 11, i32* %b, align 4     ; 初始化 b 为 11
+
 
     ; 获取用户输入 x
     %0 = call i32 @getint()            ; 调用 getint 函数获取输入
     store i32 %0, i32* %x, align 4      ; 将输入存储到 x
 
     ; 进行条件判断 (a > 0 || (b = b + 1))
-    %1 = load i32, i32* %a, align 4     ; 加载 a 的当前值
-    %cmp = icmp sgt i32 %1, 0            ; 判断 a > 0
+    %1 = load i32, i32* @a, align 4     ; 加载 a 的当前值
+    %cmp = icmp sgt i32 %1, 0           ; 判断 a > 0
     br i1 %cmp, label %true_block, label %false_block ; 根据条件跳转
 
 true_block:                           ; 当 a > 0 时执行
@@ -69,24 +69,34 @@ true_block:                           ; 当 a > 0 时执行
     br label %cond_end                  ; 跳转到条件结束部分
 
 false_block:                          ; 当 a <= 0 时执行
-    %3 = load i32, i32* %b, align 4     ; 加载 b 的当前值
+    %3 = load i32, i32* @b, align 4     ; 加载 b 的当前值
     %inc_b = add i32 %3, 1              ; b++
-    store i32 %inc_b, i32* %b, align 4  ; 更新 b 的值
+    store i32 %inc_b, i32* @b, align 4  ; 更新 b 的值
+
+    %new_b = load i32, i32* @b, align 4 ; 加载更新后的 b
+    %cmp_b = icmp ne i32 %new_b, 0      ; 判断 b != 0
+    br i1 %cmp_b, label %true_block_in_false, label %cond_end ; 根据 b 的值判断真假
+
+true_block_in_false:                   ; 当 b != 0 时执行
+    %4 = load i32, i32* %x, align 4     ; 加载 x 的当前值
+    %inc_x_in_false = add i32 %4, 1     ; x++
+    store i32 %inc_x_in_false, i32* %x, align 4 ; 更新 x 的值
     br label %cond_end                  ; 跳转到条件结束部分
 
+
 cond_end:                             ; 条件结束标签
-    %4 = load i32, i32* %b, align 4     ; 加载 b 的值
-    call void @putint(i32 %4)           ; 输出 b 的值
+    %5 = load i32, i32* @b, align 4     ; 加载 b 的值
+    call void @putint(i32 %5)           ; 输出 b 的值
     call void @putch(i32 10)            ; 输出换行符
 
-    %5 = load i32, i32* %x, align 4     ; 加载 x 的值
-    call void @putint(i32 %5)           ; 输出 x 的值
+    %6 = load i32, i32* %x, align 4     ; 加载 x 的值
+    call void @putint(i32 %6)           ; 输出 x 的值
     call void @putch(i32 10)            ; 输出换行符
 
     ; 调用 f 函数并输出结果
-    %6 = load i32, i32* %x, align 4     ; 加载 x 的值
-    %7 = call i32 @f(i32 %6)            ; 调用 f(x)
-    call void @putint(i32 %7)           ; 输出 f(x) 的结果
+    %7 = load i32, i32* %x, align 4     ; 加载 x 的值
+    %8 = call i32 @f(i32 %7)            ; 调用 f(x)
+    call void @putint(i32 %8)           ; 输出 f(x) 的结果
     call void @putch(i32 10)            ; 输出换行符
 
     ret i32 0                            ; 返回 0，表示程序成功结束
