@@ -1,5 +1,5 @@
 const float p = 3.0;
-int a = 3, b = 11;
+int a = 12, b = 11;
 int array1[4] = {1, 2, 3, 4};
 
 void putint(int);
